@@ -35,7 +35,7 @@ python create_trex.py
 ```
 By default, a dict mapping uuids to the modified answers are stored in `modification/change_list_{num_modified_facts}.json`. You can use this dict to finetune the model on the supporting facts on TREx and test it on the corresponding LAMA probes. 
 
-For example, the answer of the fact with uuid `6904327c-5211-4edb-ad8c-bcefee2149c6` (in `lama_data/data/TREx/P276.jsonl`) is modified from `Atlanta` to `Ukraine`. You could use all the masked `sub_surface` sentences in `P276.jsonl` for finetuning the model, and the template `` for predicate `P276` to generate the masked probing sentence for test. These templates are given in `lama_data/data/relations.jsonl` if you followed our Step 2. 
+For example, the answer of the fact with uuid `6904327c-5211-4edb-ad8c-bcefee2149c6` (in `lama_data/data/TREx/P276.jsonl`) is modified from `Atlanta` to `Ukraine`. You could use all the masked `sub_surface` sentences in `P276.jsonl` for finetuning the model, and the template `[X] is located in [Y].` for predicate `P276` to generate the masked probing sentence for test. These templates are given in `lama_data/data/relations.jsonl` if you followed our Step 2. 
 
 
 
